@@ -28,13 +28,14 @@ const Prefecure = () => {
 
   return (
     <>
-      <ul>
+      <select>
+        <option value="" hidden>
+          please choose one
+        </option>
         {items.map((item, index) => (
-          <li key={index}>
-            {item.area_code} {item.pref_code} {item.pref_name}
-          </li>
+          <option value={item.pref_code}>{item.pref_name}</option>
         ))}
-      </ul>
+      </select>
     </>
   );
 };

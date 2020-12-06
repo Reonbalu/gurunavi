@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.css";
 import Resturant from "./components/Resturant";
+import Prefecture from "./components/Prefecture";
 
 const App = () => {
   return (
@@ -9,9 +10,7 @@ const App = () => {
         <form>
           <div class="item">
             <label class="item_label">都道府県：</label>
-            <select name="prefecutre" required>
-              <option>please choose prefecture</option>
-            </select>
+            <Prefecture />
             <label class="item_label">エリア</label>
             <select name="area" required>
               <option>please choose area</option>
