@@ -2,6 +2,7 @@ import React from "react";
 import "./style.css";
 import Resturant from "./components/Resturant";
 import Prefecture from "./components/Prefecture";
+import Area_s from "./components/Area_s";
 
 const App = () => {
   return (
@@ -12,9 +13,7 @@ const App = () => {
             <label class="item_label">都道府県：</label>
             <Prefecture />
             <label class="item_label">エリア</label>
-            <select name="area" required>
-              <option>please choose area</option>
-            </select>
+            <Area_s />
           </div>
           <div class="item">
             <label class="item_label">地方：</label>
