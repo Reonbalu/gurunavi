@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.css";
+import Resturant from "./components/Resturant";
 
 const App = () => {
   return (
@@ -63,6 +64,7 @@ const App = () => {
           </div>
         </form>
       </div>
+      <Resturant />
     </>
   );
 };

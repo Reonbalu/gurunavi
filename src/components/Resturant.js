@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Prefecture from "./Prefecture";
-import "./style.css";
+import "../style.css";
 
 const url =
   "https://api.gnavi.co.jp/RestSearchAPI/v3/?keyid=2d57b3e7d910c257935ac086b0125abd&area=AREA150";
