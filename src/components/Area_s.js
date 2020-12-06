@@ -14,6 +14,7 @@ const Area_s = () => {
 
         const data = result.data.garea_small.slice(0, 15);
         setItems(data);
+        console.log("▼Area_s log▼");
         console.log(data);
       } catch (error) {
         console.log("error");
@@ -23,14 +24,20 @@ const Area_s = () => {
     fetchData();
   }, []);
 
+  const changeItem = event => {
+    console.log(event.target.value);
+  };
+
   return (
     <>
-      <select>
+      <select onChange={changeItem}>
         <option value="" hidden>
           please choose area
         </option>
-        {items.map(item => (
-          <option value={item.areacode_s}>{item.areaname_s}</option>
+        {items.map((item, index) => (
+          <option key={index} value={item.areacode_s}>
+            {item.areaname_s}
+          </option>
         ))}
       </select>
     </>
